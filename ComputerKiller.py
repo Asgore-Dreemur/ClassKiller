@@ -237,9 +237,6 @@ def pkg2(arrs):
 
 def send(send_list, ip, port):
     print(send_list)
-    if len(send_list) == 0:
-        print("[-] error 请使用 -h 以获取命令帮助")
-        sys.exit(0)
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     
     for times in range(1):
